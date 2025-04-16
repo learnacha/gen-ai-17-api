@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
-API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+API_KEY = os.getenv("HUGGINGFACE_API_KEY") + "y"
 API_URL = "https://api-inference.huggingface.co/models/alvdansen/littletinies"
 headers = {"Authorization": f"Bearer {API_KEY}"}
 
